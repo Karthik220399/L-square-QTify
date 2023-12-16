@@ -11,11 +11,11 @@ export default function Herosection (){
     <div className="heroSection">
        <Box className="title">
          <Typography sx={{fontSize: {sm: 32, xs: 20 }}} fontWeight={600} >
-            100 Thousand Songs, ad-free 
+            100 Thousand Songs, ad-free <br/> Over thousands podcast episodes
          </Typography>
-         <Typography sx={{fontSize: {sm: 32, xs: 20 }}} fontWeight={600} >
+         {/* <Typography sx={{fontSize: {sm: 32, xs: 20 }}} fontWeight={600} >
             Over thousands podcast episodes
-         </Typography>
+         </Typography> */}
        </Box>
        <Box className="heroimage">
          <img src={heroimage} alt="hero_image" />

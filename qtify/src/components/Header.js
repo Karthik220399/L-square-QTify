@@ -13,7 +13,7 @@ export default function Header (){
         <div className="search">
         <input className="searchBar" placeholder="Search a album of your choice" />
         <div className="iconDiv">
-        <img src={Searchicon}/>
+        <img src={Searchicon} alt="logo"/>
         </div>
        
         </div>
