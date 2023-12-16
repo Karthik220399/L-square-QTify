@@ -8,21 +8,27 @@ import heroimage from "../assets/vibratingheadphone.png"
 
 export default function Herosection (){
    return (
-      <Box className="heroSection">
-       <Box className="title">
-         <Typography fontSize={32}  fontWeight={600} >
+   <Box className="heroSection">
+       {/* <Box className="title">
+         <Typography  sx={{fontSize: {sm: 32, xs: 20 }}} fontWeight={600} >
             100 Thousand Songs, ad-free 
          </Typography>
-         {/* sx={{fontSize: {sm: 32, xs: 20 }}} */}
-         <Typography fontSize={32} fontWeight={600} >
+        
+         <Typography  sx={{fontSize: {sm: 32, xs: 20 }}} fontWeight={600} >
             Over thousands podcast episodes
          </Typography>
        </Box>
        <Box className="heroimage">
          <img src={heroimage} alt="hero_image" />
-       </Box>
-    </Box>
+       </Box> */}
 
+       <div className="title">
+         <p> 100 Thousand Songs, ad-free</p>
+          <p> Over thousands podcast episodes</p>
+         <img src={heroimage} alt="hero_image" />
+       </div>
+
+    </Box>
    
    )
 };
