@@ -14,9 +14,9 @@ export default function Herosection (){
         
          <Typography  sx={{fontSize: {sm: 32, xs: 20 }, fontWeight: 600}}>Over thousands podcast episodes</Typography>
        </Box>
-       <Box className="heroimage">
+       {/* <Box className="heroimage"> */}
          <img src={heroimage} alt="hero_image" />
-       </Box>
+       {/* </Box> */}
 
     </Box>
    
