@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./Logo"
+import Logo from "./Logo";
 import GiveFeedback from "./GiveFeedback"
 import Box from '@mui/material/Box';
 import "./Header.css"

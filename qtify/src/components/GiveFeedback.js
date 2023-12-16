@@ -6,6 +6,5 @@ export default function GiveFeedback (){
 
     return (
              <button className="feedbackButton">Give Feedback</button>
-
     )
 }
