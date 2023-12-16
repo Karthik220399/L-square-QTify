@@ -1,0 +1,11 @@
+.feedbackButton{
+    background-color:#121212;
+    color: #34C94B;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    width: 10.6rem;
+    height: 47px;
+    border-radius: 12px;
+    margin-right: 1.25rem;
+}

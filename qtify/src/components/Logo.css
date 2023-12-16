@@ -1,0 +1,14 @@
+.imageConatiner {
+    background-color: #34C94B; 
+    position: relative;
+    width:60px;
+    height:20px;
+    padding:10px;
+    margin-left: 20px;
+}
+
+.headphoneImg{
+    position: absolute;
+     left: 3px;
+      top: 0;
+}
