@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Section.module.css"
 import Card from "./Card"
 import Grid from '@mui/material/Grid';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import { colors } from "@mui/material";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
+
 
 export default function Section({title,albumData}){
 
