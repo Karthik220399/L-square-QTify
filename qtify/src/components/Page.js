@@ -7,17 +7,25 @@ import { useState, useEffect } from "react";
 
 export default function Page(){
 
-   const [data, setData]  = useState([])
+   const [topAlbumData, setTopAlbumsetData]  = useState([])
+   const [newAlbumData, setNewAlbumsetData]  = useState([])
 
    useEffect(()=>{
-      performApiCall();
+    apiCall();
    },[])
 
-   const performApiCall = async() =>{
+   const apiCall = async()=>{
+      const topdata = await performApiCall("https://qtify-backend-labs.crio.do/albums/top");
+      setTopAlbumsetData(topdata);
+      const newdata = await performApiCall("https://qtify-backend-labs.crio.do/albums/new");
+      setNewAlbumsetData(newdata)
+   }
+
+   const performApiCall = async(url) =>{
     try{
-        const response = await fetch("https://qtify-backend-labs.crio.do/albums/top")
+        const response = await fetch(url)
         const data = await response.json()
-        setData(data)
+        return data;
     }catch(error){
         console.log(error);
     }   
@@ -27,9 +35,9 @@ export default function Page(){
         <div>
             <Header/>  
             <Herosection/>
-            <Section title="Top Albums" albumData={data}/>
+            <Section title="Top Albums" albumData={topAlbumData}/>
             <hr color="#34c94b"/>
-            <Section title="New Albums" albumData={data}/>
+            <Section title="New Albums" albumData={newAlbumData}/>
       </div>
     )
 }

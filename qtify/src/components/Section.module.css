@@ -1,5 +1,5 @@
 .section{
-    height: 848px;
+    min-height: 848px;
     margin-left:32px;
     margin-right:32px;
 }
