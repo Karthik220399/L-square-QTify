@@ -1,8 +1,8 @@
 .imageConatiner {
-    background-color: #34C94B; 
+    background-color: var(--color-primary); 
     position: relative;
-    width:60px;
-    height:20px;
+    width:67px;
+    height:34px;
     padding:10px;
     margin-left: 20px;
 }

@@ -1,6 +1,6 @@
 .feedbackButton{
-    background-color:#121212;
-    color: #34C94B;
+    background-color:var(--color-black);
+    color: var(--color-primary);
     font-weight: 600;
     font-size: 1.1rem;
     cursor: pointer;
@@ -8,10 +8,10 @@
     height: 47px;
     border-radius: 12px;
     margin-right: 1.25rem;
-    font-family: "Poppins";
+    padding: 10px 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .feedbackButton{
         display:none;
     }
