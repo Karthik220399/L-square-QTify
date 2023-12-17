@@ -28,6 +28,8 @@ export default function Page(){
             <Header/>  
             <Herosection/>
             <Section title="Top Albums" albumData={data}/>
+            <hr color="#34c94b"/>
+            <Section title="New Albums" albumData={data}/>
       </div>
     )
 }

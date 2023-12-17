@@ -21,6 +21,7 @@
     background-color: var(--color-black);
     color: var(--color-primary);
     border: none;
+    margin-top: 20px;
     font-weight: 600;
     font-size: 20px;
 }
