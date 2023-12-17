@@ -1,13 +1,11 @@
 import './App.css';
 import React from 'react';
-import Header from './components/Header';
-import Herosection from './components/Herosection';
+import Page from "./components/Page"
 
 function App() {
   return (
     <div> 
-       <Header/>  
-      <Herosection/>
+       <Page/>
     </div>
   );
 }

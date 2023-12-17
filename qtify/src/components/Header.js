@@ -16,12 +16,7 @@ export default function Header (){
   return (
     <Box  className={styles.headerBox}>
         <Logo/>
-        {/* <div className="search">
-          <input className="searchBar" placeholder="Search a album of your choice" />
-          <div className="iconDiv">
-            <img src={Searchicon} alt="logo"/>
-          </div>
-        </div> */}
+        
         <form onSubmit={onSubmit} className={styles.wrapper}>
           <input className={styles.search} required placeholder="Search a album of your choice" />
           <button type="submit" className={styles.searchButton}>
