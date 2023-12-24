@@ -5,6 +5,7 @@ import Section from "./Section"
 import { useState, useEffect } from "react";
 
 
+
 export default function Page(){
 
    const [topAlbumData, setTopAlbumsetData]  = useState([])
@@ -35,9 +36,9 @@ export default function Page(){
         <div>
             <Header/>  
             <Herosection/>
-            <Section title="Top Albums" albumData={topAlbumData}/>
-            <hr color="#34c94b"/>
-            <Section title="New Albums" albumData={newAlbumData}/>
+            <Section title="Top Albums" albumData={topAlbumData} viewprop="Show all"/>
+            {/* <hr color="#34c94b"/> */}
+            <Section title="New Albums" albumData={newAlbumData} viewprop="Show all"/>
       </div>
     )
 }

@@ -2,42 +2,46 @@ import React from "react";
 import styles from "./Section.module.css"
 import Card from "./Card"
 import Grid from '@mui/material/Grid';
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
+import Carousel from "./Carousel";
+import { useState, useEffect } from "react";
 
 
-export default function Section({title,albumData}){
+export default function Section({title,albumData,viewprop}){
 
+    const [view, setView ] = useState("")
 
-   
-    //   const settings = {
-    //     dots: false,
-    //     infinite: false,
-    //     speed: 500,
-    //     slidesToShow: 7,
-    //     slidesToScroll: 7,
-    //   };
+    useEffect(()=>{
+        setView(viewprop)
+    },[])
+
+    const changeView =()=>{
+        if(view === "Collapse"){
+            setView("Show all")
+        }else{
+            setView("Collapse")
+        }
+    }
 
    return(
     <div className={styles.section}>
         <div className={styles.sectionHeader}>
             <p className={styles.sectionTitle}>{title}</p>
-            <button className={styles.showButton}>Collpase</button>
+            <button className={styles.showButton} onClick={changeView}>{view}</button>
         </div>
+
+    {view === "Collapse"?
      <Grid container spacing={3}>
        {albumData.map((ite)=>(
             <Grid item lg={1.7} md={3} sm={4} xs={6} key={ite.id}>
-                <Card image={ite.image} title={ite.title} follows={ite.follows}/>
+                <Card data={ite} type="album"/>
             </Grid>
        ))}
      </Grid> 
 
-       {/* <Slider {...settings} >
-        {albumData.map((ite)=>(     
-                <Card image={ite.image} title={ite.title} follows={ite.follows}/>
-       ))}
-       </Slider> */}
+     :
+
+     <Carousel cdata={albumData} type="album"/>
+       }
 
     </div>
    )

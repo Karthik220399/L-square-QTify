@@ -4,12 +4,29 @@ import './index.css';
 import App from './App';
 import { ThemeProvider } from '@mui/material';
 import theme from './theme';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Page from './components/Page';
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children:[
+      {
+        path:"/",
+        element: <Page/>
+      }
+    ]
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <RouterProvider router={router}/>     
     </ThemeProvider> 
   </React.StrictMode>
 );

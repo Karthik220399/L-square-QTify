@@ -1,7 +1,5 @@
 .section{
-    min-height: 848px;
-    margin-left:32px;
-    margin-right:32px;
+    margin: 10px 32px 20px 32px;
 }
 
 .sectionHeader{
@@ -21,7 +19,6 @@
     background-color: var(--color-black);
     color: var(--color-primary);
     border: none;
-    margin-top: 20px;
     font-weight: 600;
     font-size: 20px;
 }

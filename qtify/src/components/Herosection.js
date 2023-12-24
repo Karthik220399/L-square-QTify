@@ -10,7 +10,7 @@ export default function Herosection (){
    return (
    <Box className={styles.heroSection}>
        <Box className={styles.title}>
-         <Typography   sx={{fontSize: {sm: 32, xs: 20 }, fontWeight: 600}}>100 Thousand Songs, ad-free</Typography>
+         <Typography   sx={{fontSize: {sm: 32, xs: 20 }, fontWeight: 600}}>100 Thousand Songs, ad-free </Typography>
          <Typography  sx={{fontSize: {sm: 32, xs: 20 }, fontWeight: 600}}>Over thousands podcast episodes</Typography>
        </Box>
        <Box className={styles.heroimage}>
