@@ -19,7 +19,7 @@ export default function LeftButton (){
   },[])
   return (
    <div className={styles.LeftArrow}>
-      {isBeginning && <LeftArrow onClick={()=>swiper.slidePrev()}/>}
+      {!isBeginning && <LeftArrow onClick={()=>swiper.slidePrev()}/>}
    </div>
    
   )
