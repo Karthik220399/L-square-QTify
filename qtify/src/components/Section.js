@@ -6,13 +6,20 @@ import Carousel from "./Carousel";
 import { useState, useEffect } from "react";
 
 
-export default function Section({title,albumData,viewprop}){
+
+export default function Section({title,albumData,viewprop,type}){
 
     const [view, setView ] = useState("")
+   
+    // console.log("album", albumData)
 
     useEffect(()=>{
-        setView(viewprop)
+        setView(viewprop);
+      
     },[])
+   
+
+   
 
     const changeView =()=>{
         if(view === "Collapse"){
@@ -26,9 +33,10 @@ export default function Section({title,albumData,viewprop}){
     <div className={styles.section}>
         <div className={styles.sectionHeader}>
             <p className={styles.sectionTitle}>{title}</p>
-            <button className={styles.showButton} onClick={changeView}>{view}</button>
+           <button className={styles.showButton} onClick={changeView}>{view}</button>
         </div>
 
+       
     {view === "Collapse"?
      <Grid container spacing={3}>
        {albumData.map((ite)=>(
@@ -40,8 +48,9 @@ export default function Section({title,albumData,viewprop}){
 
      :
 
-     <Carousel cdata={albumData} type="album"/>
-       }
+     <Carousel cdata={albumData} type={type}/>}
+       
+     
 
     </div>
    )

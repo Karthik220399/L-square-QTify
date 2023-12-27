@@ -18,7 +18,6 @@ import 'swiper/css/navigation';
 //   return <></>;
 // }
  function Carousel ({cdata, type}) {
-  console.log("c",cdata)
   return (
     <div className={styles.wrapper}>
      <Swiper

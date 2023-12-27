@@ -1,0 +1,23 @@
+.tab{
+    color: var(--color-white) !important;
+    font-weight: bold;
+    text-transform: none;
+}
+
+
+.section{
+    margin: 10px 32px 20px 32px;
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+.sectionTitle{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 20px;
+}
